@@ -12,6 +12,13 @@
     />
     <link rel="stylesheet" href="./src/css/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>
     <title>Adhyanshala</title>
   </head>
   <body>
@@ -30,8 +37,9 @@
         <nav
           class="md:ml-auto flex flex-wrap items-center text-base justify-center"
         >
-          <a class="mr-5 hover:text-gray-900 pointer">Contact</a>
-          <a class="mr-5 hover:text-gray-900 pointer">Feedback</a>
+          <a href="#contactnav" class="mr-5 hover:text-gray-900 pointer"
+            >Contact & Feedback</a
+          >
         </nav>
         <button
           class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"
@@ -51,6 +59,16 @@
         </button>
       </div>
     </header>
+
+    <!-- B A N N E R -->
+
+    <section>
+      <div class="banner-container">
+        <div class="banner">
+          <img src="./src/images/banner.png" alt="Flyer" />
+        </div>
+      </div>
+    </section>
 
     <!--             H E R O               -->
 
@@ -81,16 +99,12 @@
             Register yourself now to book a free demo class.
           </p>
           <div class="flex justify-center">
-            <button
-              class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+            <a
+              href="./registration/regForm.html"
+              class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg pointer"
             >
               Register Here
-            </button>
-            <!-- <button
-              class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg"
-            >
-              Login
-            </button> -->
+            </a>
           </div>
         </div>
       </div>
@@ -98,226 +112,12 @@
 
     <!--             C O N T E N T               -->
 
-    <section class="text-gray-400 bg-gray-900 body-font">
-      <div class="container px-5 py-24 mx-auto">
-        <div class="flex flex-wrap -m-4">
-          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-            <a class="block relative h-48 rounded overflow-hidden">
-              <img
-                alt="Class 12th"
-                class="object-cover object-center w-full h-full block"
-                src="#"
-              />
-            </a>
-            <div class="mt-4">
-              <h3 class="text-black text-xs tracking-widest title-font mb-1">
-                CATEGORY
-              </h3>
-              <h2 class="text-black title-font text-lg font-medium">
-                The Catalyzer
-              </h2>
-              <p class="mt-1">$16.00</p>
-            </div>
-          </div>
-          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-            <a class="block relative h-48 rounded overflow-hidden">
-              <img
-                alt="ecommerce"
-                class="object-cover object-center w-full h-full block"
-                src="https://dummyimage.com/421x261"
-              />
-            </a>
-            <div class="mt-4">
-              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                CATEGORY
-              </h3>
-              <h2 class="text-white title-font text-lg font-medium">
-                Shooting Stars
-              </h2>
-              <p class="mt-1">$21.15</p>
-            </div>
-          </div>
-          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-            <a class="block relative h-48 rounded overflow-hidden">
-              <img
-                alt="ecommerce"
-                class="object-cover object-center w-full h-full block"
-                src="https://dummyimage.com/422x262"
-              />
-            </a>
-            <div class="mt-4">
-              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                CATEGORY
-              </h3>
-              <h2 class="text-white title-font text-lg font-medium">Neptune</h2>
-              <p class="mt-1">$12.00</p>
-            </div>
-          </div>
-          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-            <a class="block relative h-48 rounded overflow-hidden">
-              <img
-                alt="ecommerce"
-                class="object-cover object-center w-full h-full block"
-                src="https://dummyimage.com/423x263"
-              />
-            </a>
-            <div class="mt-4">
-              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                CATEGORY
-              </h3>
-              <h2 class="text-white title-font text-lg font-medium">
-                The 400 Blows
-              </h2>
-              <p class="mt-1">$18.40</p>
-            </div>
-          </div>
-          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-            <a class="block relative h-48 rounded overflow-hidden">
-              <img
-                alt="Class 12th"
-                class="object-cover object-center w-full h-full block"
-                src="#"
-              />
-            </a>
-            <div class="mt-4">
-              <h3 class="text-black text-xs tracking-widest title-font mb-1">
-                CATEGORY
-              </h3>
-              <h2 class="text-black title-font text-lg font-medium">
-                The Catalyzer
-              </h2>
-              <p class="mt-1">$16.00</p>
-            </div>
-          </div>
-          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-            <a class="block relative h-48 rounded overflow-hidden">
-              <img
-                alt="ecommerce"
-                class="object-cover object-center w-full h-full block"
-                src="https://dummyimage.com/421x261"
-              />
-            </a>
-            <div class="mt-4">
-              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                CATEGORY
-              </h3>
-              <h2 class="text-white title-font text-lg font-medium">
-                Shooting Stars
-              </h2>
-              <p class="mt-1">$21.15</p>
-            </div>
-          </div>
-          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-            <a class="block relative h-48 rounded overflow-hidden">
-              <img
-                alt="ecommerce"
-                class="object-cover object-center w-full h-full block"
-                src="https://dummyimage.com/422x262"
-              />
-            </a>
-            <div class="mt-4">
-              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                CATEGORY
-              </h3>
-              <h2 class="text-white title-font text-lg font-medium">Neptune</h2>
-              <p class="mt-1">$12.00</p>
-            </div>
-          </div>
-          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-            <a class="block relative h-48 rounded overflow-hidden">
-              <img
-                alt="ecommerce"
-                class="object-cover object-center w-full h-full block"
-                src="https://dummyimage.com/423x263"
-              />
-            </a>
-            <div class="mt-4">
-              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                CATEGORY
-              </h3>
-              <h2 class="text-white title-font text-lg font-medium">
-                The 400 Blows
-              </h2>
-              <p class="mt-1">$18.40</p>
-            </div>
-          </div>
-          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-            <a class="block relative h-48 rounded overflow-hidden">
-              <img
-                alt="ecommerce"
-                class="object-cover object-center w-full h-full block"
-                src="https://dummyimage.com/424x264"
-              />
-            </a>
-            <div class="mt-4">
-              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                CATEGORY
-              </h3>
-              <h2 class="text-white title-font text-lg font-medium">
-                The Catalyzer
-              </h2>
-              <p class="mt-1">$16.00</p>
-            </div>
-          </div>
-          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-            <a class="block relative h-48 rounded overflow-hidden">
-              <img
-                alt="ecommerce"
-                class="object-cover object-center w-full h-full block"
-                src="https://dummyimage.com/425x265"
-              />
-            </a>
-            <div class="mt-4">
-              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                CATEGORY
-              </h3>
-              <h2 class="text-white title-font text-lg font-medium">
-                Shooting Stars
-              </h2>
-              <p class="mt-1">$21.15</p>
-            </div>
-          </div>
-          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-            <a class="block relative h-48 rounded overflow-hidden">
-              <img
-                alt="ecommerce"
-                class="object-cover object-center w-full h-full block"
-                src="https://dummyimage.com/427x267"
-              />
-            </a>
-            <div class="mt-4">
-              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                CATEGORY
-              </h3>
-              <h2 class="text-white title-font text-lg font-medium">Neptune</h2>
-              <p class="mt-1">$12.00</p>
-            </div>
-          </div>
-          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-            <a class="block relative h-48 rounded overflow-hidden">
-              <img
-                alt="ecommerce"
-                class="object-cover object-center w-full h-full block"
-                src="https://dummyimage.com/428x268"
-              />
-            </a>
-            <div class="mt-4">
-              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                CATEGORY
-              </h3>
-              <h2 class="text-white title-font text-lg font-medium">
-                The 400 Blows
-              </h2>
-              <p class="mt-1">$18.40</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!--             C O N T A C T               -->
 
-    <section class="text-gray-400 bg-gray-900 body-font relative">
+    <section
+      id="contactnav"
+      class="text-gray-400 bg-gray-900 body-font relative"
+    >
       <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
         <div
           class="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative"
@@ -371,43 +171,46 @@
             If you have any feedback, Please take a moment to describe how we
             can improve our System.
           </p>
-          <div class="relative mb-4">
-            <label for="name" class="leading-7 text-sm text-gray-400"
-              >Name</label
+          <form action="https://formspree.io/f/mqkjpkyk" method="post">
+            <div class="relative mb-4">
+              <label for="name" class="leading-7 text-sm text-gray-400"
+                >Name</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="Feedback-Name"
+                class="w-full bg-gray-200 rounded border border-gray-400 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              />
+            </div>
+            <div class="relative mb-4">
+              <label for="email" class="leading-7 text-sm text-gray-400"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="Feedback-Email"
+                class="w-full bg-gray-200 rounded border border-gray-400 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              />
+            </div>
+            <div class="relative mb-4">
+              <label for="message" class="leading-7 text-sm text-gray-400"
+                >Message</label
+              >
+              <textarea
+                id="message"
+                name="Feedback-Message"
+                class="w-full bg-gray-200 rounded border border-gray-400 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+              ></textarea>
+            </div>
+            <button
+              class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+              type="submit"
             >
-            <input
-              type="text"
-              id="name"
-              name="name"
-              class="w-full bg-gray-200 rounded border border-gray-400 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-            />
-          </div>
-          <div class="relative mb-4">
-            <label for="email" class="leading-7 text-sm text-gray-400"
-              >Email</label
-            >
-            <input
-              type="email"
-              id="email"
-              name="email"
-              class="w-full bg-gray-200 rounded border border-gray-400 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-            />
-          </div>
-          <div class="relative mb-4">
-            <label for="message" class="leading-7 text-sm text-gray-400"
-              >Message</label
-            >
-            <textarea
-              id="message"
-              name="message"
-              class="w-full bg-gray-200 rounded border border-gray-400 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-            ></textarea>
-          </div>
-          <button
-            class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
-          >
-            Button
-          </button>
+              Send
+            </button>
+          </form>
         </div>
       </div>
     </section>
@@ -503,5 +306,10 @@
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
+    <script>
+      let scroll = new SmoothScroll('a[href*="#contactnav"]', {
+        speed: 1000,
+      });
+    </script>
   </body>
 </html>

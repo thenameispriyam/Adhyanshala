@@ -9,6 +9,144 @@ h1 {
     font-weight: 700;
 }
 
+
+
+.banner-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.banner {
+    width: 98%;
+    height: auto;
+    background-color: hotpink;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
 .pointer {
     cursor: pointer;
+}
+
+.class-box-container {
+    width: 100%;
+    height: 100%;
+    background-color: brown;
+}
+
+/* R E G I S T R A T I O N  F O R M  C S S  */
+
+
+.formContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box {
+    width: 50%;
+    height: 90vh;
+    padding: 20px 10px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.2);
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box-selector-page {
+    height: 75vh;
+}
+
+.iam {
+    margin-bottom: 50px;
+}
+.go-back {
+    background-color: rgba(140, 160, 220, 0.7);
+    padding: 2px 10px;
+    border-radius: 10px;
+    margin-top: 60px;
+}
+.select {
+    display: flex;
+    flex-direction: row;
+}
+.tutor, .student {
+    margin: 10px;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+}
+
+.submit button {
+    padding: 20px 100px;
+    margin-top: 30px;
+    text-align: center;
+    background-color: rgba(140, 160, 220, 0.7);
+    border-radius: 10px;
+}
+
+.form-box::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* __________________________________ */
+  .form-box input {
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 2px 10px;
+    padding: 0 5px;
+    width: 300px;
+  }
+
+  .form-box select {
+    color: rgb(165, 165, 165);
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 2px 10px;
+    padding: 0 5px;
+    max-width: 300px;
+  }
+  /* __________________________________ */
+
+  .feedback-form {
+    width: 100%;
+    height: 100%;
+  }
+
+/* M E D I A  Q U E R I E S */
+
+@media screen and (max-width: 640px) {
+    .banner-container {
+        height: 15vh;
+    }
+    .banner {
+        display: flex;
+    }
+
+    .formContainer {
+        height: auto;
+    }
+    .form-box {
+        width: 90%;
+    }
+    .form-box-selector-page {
+        height: 60vh;
+    }
+    .go-back {
+        margin-top: 10px;
+    }
+    .submit {
+        margin-top: 50px;
+    }
 }

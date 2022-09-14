@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../src/css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Adhyanshala</title>
+  </head>
+  <body>
+    <!--             H E A D E R               -->
+
+    <header class="text-gray-600 body-font">
+      <div
+        class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center headerBG"
+      >
+        <img src="../src/images/iconforWeb.png" alt="logo" width="50px" />
+
+        <a
+          class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+          ><span class="ml-3 text-xl">Adhyanshala</span></a
+        >
+        <nav
+          class="md:ml-auto flex flex-wrap items-center text-base justify-center"
+        >
+          <a href="../index.html" class="mr-5 hover:text-gray-900 pointer"
+            >Home</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <!--             F O R M               -->
+
+    <section>
+      <div class="formContainer">
+        <div class="form-box">
+          <a href="./regForm.html" class="iam go-back">Go Back</a>
+          <div class="form-tutor">
+            <form action="https://formspree.io/f/xjvzybjy" method="POST">
+              <div>
+                <label for="name">Name : </label> <br />
+                <input
+                  id="name"
+                  type="text"
+                  placeholder="Full name"
+                  required
+                  name="Name"
+                />
+              </div>
+              <div>
+                <label for="email">E-mail : </label> <br />
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="E-mail address"
+                  required
+                  name="E-mail"
+                />
+              </div>
+              <div>
+                <label for="contact">Contact : </label> <br />
+                <input
+                  id="contact"
+                  type="number"
+                  placeholder="Phone number"
+                  required
+                  maxlength="12"
+                  minlength="10"
+                  name="Contact-Number"
+                />
+              </div>
+              <div>
+                <label for="address">Address : </label> <br />
+                <input
+                  id="address"
+                  type="text"
+                  placeholder="Full address"
+                  required
+                  name="Address"
+                />
+              </div>
+              <div>
+                <label for="pincode">Pincode : </label> <br />
+                <input
+                  id="pincode"
+                  type="number"
+                  placeholder="Area Pincode"
+                  required
+                  name="Pincode"
+                  maxlength="2"
+                  minlength="5"
+                />
+              </div>
+              <div>
+                <label for="qualification">Highest Qualification : </label>
+                <br />
+                <select name="Highest-Qualification" id="qualification">
+                  <optgroup label="Bachelor's">
+                    <option value="Bachelor of Arts (BA)">
+                      Bachelor of Arts (BA)
+                    </option>
+                    <option value="Bachelor of Science (BSc)">
+                      Bachelor of Science (BSc)
+                    </option>
+                    <option value="Bachelor of Commerce (BCom)">
+                      Bachelor of Commerce (BCom)
+                    </option>
+                    <option value="Bachelor of Technology (BTech)">
+                      Bachelor of Technology (BTech)
+                    </option>
+                    <option value="Bachelor of Business Administration (BBA)">
+                      Bachelor of Business Administration (BBA)
+                    </option>
+                    <option value="Bachelor of Architecture (BArch)">
+                      Bachelor of Architecture (BArch)
+                    </option>
+                    <option value="Bachelor of Vocation (BVoc)">
+                      Bachelor of Vocation (BVoc)
+                    </option>
+                    <option value="Other">Other</option>
+                  </optgroup>
+                  <optgroup label="Masters's">
+                    <option value="Master of Arts (MA)">
+                      Master of Arts (MA)
+                    </option>
+                    <option value="Master of Science (MSc)">
+                      Master of Science (MSc)
+                    </option>
+                    <option value="Master of Commerce (MCom)">
+                      Master of Commerce (MCom)
+                    </option>
+                    <option value="Master of Technology (MTech)">
+                      Master of Technology (MTech)
+                    </option>
+                    <option value="Master of Business Administration (MBA)">
+                      Master of Business Administration (MBA)
+                    </option>
+                    <option value="Master of Architecture (MArch)">
+                      Master of Architecture (MArch)
+                    </option>
+                    <option value="Other">Other</option>
+                  </optgroup>
+                  <optgroup label="Doctoral">
+                    <option value="Doctor of Philosophy (PhD)">
+                      Doctor of Philosophy (PhD)
+                    </option>
+                    <option value="Doctor of Education (EdD)">
+                      Doctor of Education (EdD)
+                    </option>
+                    <option value="Doctor of Engineering (EngD)">
+                      Doctor of Engineering (EngD)
+                    </option>
+                    <option value="Doctor of Business Administration (DBA)">
+                      Doctor of Business Administration (DBA)
+                    </option>
+                    <option value="Other">Other</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div>
+                <label for="lang">Preferred Language : </label> <br />
+                <select name="Language" id="lang">
+                  <option value="English">English</option>
+                  <option value="Hindi">Hindi</option>
+                </select>
+              </div>
+              <div>
+                <label for="subject">Specialization in : </label> <br />
+                <small>*If multiple, separate with commas</small> <br />
+                <input
+                  id="subject"
+                  type="text"
+                  placeholder="Name of the Subject"
+                  required
+                  name="Subject"
+                />
+              </div>
+              <div>
+                <label for="experience">Years of Experience : </label> <br />
+                <select name="Teaching-Experience" id="experience">
+                  <option value="< 1 Year">< 1 Year</option>
+                  <option value="2 Years+">2 Years+</option>
+                  <option value="3 Years+">3 Years+</option>
+                  <option value="4 Years+">4 Years+</option>
+                  <option value="5 Years+">5 Years+</option>
+                </select>
+              </div>
+              <div class="submit">
+                <button type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--             F O O T E R                -->
+
+    <footer class="text-gray-400 bg-gray-900 body-font">
+      <div
+        class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
+      >
+        <a
+          class="flex title-font font-medium items-center md:justify-start justify-center text-black"
+        >
+          <img src="../src/images/iconforWeb.png" alt="logo" width="50px" />
+          <!-- <span class="ml-3 text-xl">Thanks for visiting</span> -->
+        </a>
+        <p
+          class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4"
+        >
+          © 2022 Adhyanshala
+        </p>
+        <span
+          class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
+        >
+          <a class="text-gray-400">
+            <svg
+              fill="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+              ></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-400">
+            <svg
+              fill="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+              ></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-400">
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path
+                d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+              ></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-400">
+            <svg
+              fill="currentColor"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="0"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="none"
+                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+              ></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </footer>
+
+    <!-- SCRIPT -->
+  </body>
+</html>
