@@ -21,7 +21,7 @@ h1 {
 .banner {
     width: 98%;
     height: auto;
-    background-color: hotpink;
+    background-color: white;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -141,10 +141,10 @@ h1 {
         width: 90%;
     }
     .form-box-selector-page {
-        height: 60vh;
+        height: 50vh;
     }
     .go-back {
-        margin-top: 60px;
+        margin-top: 100px;
     }
     .submit {
         margin-top: 50px;
